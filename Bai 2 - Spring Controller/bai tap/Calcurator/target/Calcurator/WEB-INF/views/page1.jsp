@@ -18,5 +18,6 @@
     <input type="submit" value="Calculator">
 </form>
 <p>${result}</p>
+<p>${message}</p>
 </body>
 </html>

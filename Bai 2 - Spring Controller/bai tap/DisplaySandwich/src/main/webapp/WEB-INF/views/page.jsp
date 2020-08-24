@@ -13,11 +13,11 @@
 </head>
 <body>
 <form action="/save" >
-    <input type="checkbox" id="lettuce" name="condiment" value="lettuce">
+    <input type="checkbox" id="lettuce" name="condiment" value="lettuce" >
     <label for="lettuce"> Lettuce</label><br>
-    <input type="checkbox" id="tomato" name="condiment" value="tomato">
+    <input type="checkbox" id="tomato" name="condiment" value="tomato" >
     <label for="tomato">Tomato</label><br>
-    <input type="checkbox" id="mustard" name="condiment" value="mustard">
+    <input type="checkbox" id="mustard" name="condiment" value="mustard" >
     <label for="mustard">Mustard</label><br><br>
     <input type="submit" value="Submit">
 </form>

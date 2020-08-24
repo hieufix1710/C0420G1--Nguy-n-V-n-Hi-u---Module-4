@@ -5,30 +5,23 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import service.CalculatorService;
 
 @Controller
 public class CalculatorController {
+    private CalculatorService calculatorService= new CalculatorService();
     @RequestMapping ("/home")
     public String home(){
         return "page1";
     }
     @RequestMapping ("/calculator")
-    public ModelAndView calculator(@RequestParam int num1, @RequestParam int num2, @RequestParam String operator, ModelAndView model){
-        int result =0;
-        if (operator.equals("+")){
-            result=num1+num2;
+    public ModelAndView calculator(@RequestParam int num1, @RequestParam int num2, @RequestParam String operator){
+        if (calculatorService.calculator(num1,num2,operator)==-1){
+            ModelAndView modelAndView=new ModelAndView("page1","message","Operator not valid !");
+            return modelAndView;
         }
-        if (operator.equals("-")){
-            result=num1-num2;
-        }
-        if (operator.equals("*") || operator.equals("x")){
-            result=num1*num2;
-        }
-        if (operator.equals("/")){
-            result=num1/num2;
-        }
-        model =new ModelAndView("page1","result",result);
-        return model;
+      ModelAndView modelAndView1=new ModelAndView("page1","result",calculatorService.calculator(num1,num2,operator));
+      return modelAndView1;
 
     }
 }
