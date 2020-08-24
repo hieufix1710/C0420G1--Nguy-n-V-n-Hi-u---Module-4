@@ -17,5 +17,6 @@
     <input type="text" name="operator" placeholder="operator">
     <input type="submit" value="Calculator">
 </form>
+<p>${result}</p>
 </body>
 </html>

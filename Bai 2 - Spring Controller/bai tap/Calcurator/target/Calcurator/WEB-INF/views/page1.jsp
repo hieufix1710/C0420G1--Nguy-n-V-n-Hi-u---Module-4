@@ -11,11 +11,12 @@
     <title>Calcurator</title>
 </head>
 <body>
-<form>
+<form action="/calculator">
     <input type="text" name="num1" placeholder="num1">
     <input type="text" name="num2" placeholder="num1">
-    <input type="text" name="operator">
+    <input type="text" name="operator" placeholder="operator">
     <input type="submit" value="Calculator">
 </form>
+<p>${result}</p>
 </body>
 </html>
