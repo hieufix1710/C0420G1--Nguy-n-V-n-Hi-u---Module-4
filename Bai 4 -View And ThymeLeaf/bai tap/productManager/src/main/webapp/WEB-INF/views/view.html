@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Views</title>
+
+</head>
+<body>
+<h3>View Customer</h3>
+<p>
+    <a th:href="@{/products}">
+        Back to product list
+    </a>
+</p>
+<div >
+    <div>
+        <label>Name:</label>
+        <label th:text="${product.getName()}"></label>
+    </div>
+    <div >
+        <label>Price:</label>
+        <label th:text="${product.getPrice()}"></label>
+    </div>
+    <div >
+        <label >Type:</label>
+        <label th:each="typeProduct :${typeProduct}" th:if="${typeProduct.id}==${product.idTypeProduct}" th:text="${typeProduct.name}" >
+
+        </label>
+    </div>
+    <div>
+        <label>Amount:</label>
+        <label th:text="${product.getAmount()}"></label>
+    </div>
+</div>
+</body>
+</html>
