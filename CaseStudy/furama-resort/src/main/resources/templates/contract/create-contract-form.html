@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{home-page.html::head}">
+    <meta charset="UTF-8">
+    <title>Cra</title>
+</head>
+<style th:replace="~{customer/list-customer.html::style}">
+</style>
+<body>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <form action="/admin/create-new-contract" method="post">
+            <div class="modal-header" style="background: dimgrey">
+                <h4 class="modal-title" style="color: #e9e9e9">Add New Contracts</h4>
+                <a class="close" th:href="@{/contract-list}">x</a>
+            </div>
+            <div class="modal-body" th:object="${contract}">
+                <div class="form-group">
+                    <label>Start day</label>
+                    <input type="text" class="form-control" name="name" th:field="*{contractStartDate}" id="name">
+                    <p th:if="${#fields.hasErrors('contractStartDate')}" th:errors="*{contractStartDate}"></p>
+                </div>
+                <div class="form-group">
+                    <label>End day</label>
+                    <input type="text" class="form-control" name="contractEndDate" th:field="*{contractEndDate}" id="birthday">
+                    <p th:if="${#fields.hasErrors('contractEndDate')}" th:errors="*{contractEndDate}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Deposit</label>
+                    <input type="text" class="form-control" name="contractDeposit" th:field="*{contractDeposit}" id="CMND">
+                    <p th:if="${#fields.hasErrors('contractDeposit')}" th:errors="*{contractDeposit}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Total money</label>
+                    <input type="text" class="form-control" name="contractTotalMoney" th:field="*{contractTotalMoney}" id="phone">
+                    <p th:if="${#fields.hasErrors('contractTotalMoney')}" th:errors="*{contractTotalMoney}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Employee </label>
+                    <select th:field="*{employee}"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option th:each="employee:${employees}" th:value="${employee.id}" th:text="${employee.name}"></option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('employee')}" th:errors="*{employee}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Customer </label>
+                    <select th:field="*{customer}"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option th:each="customer:${customers}" th:value="${customer.id}" th:text="${customer.name}"></option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('customer')}" th:errors="*{customer}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Service </label>
+                    <select th:field="*{service}"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option th:each="service:${services}" th:value="${service.id}" th:text="${service.name}"></option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('service')}" th:errors="*{service}"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" th:href="@{/admin/contract-list}">Cancel</a>
+                <input type="submit" class="btn btn-success" value="Add">
+                <div th:text="${message}"></div>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

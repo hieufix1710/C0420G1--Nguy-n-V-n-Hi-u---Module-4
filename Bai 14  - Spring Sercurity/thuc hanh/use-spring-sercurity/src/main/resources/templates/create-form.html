@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new blog</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<form th:object="${blog}" action="/create" method="post">
+    <input type="hidden" th:field="*{id}" th:value="${0}">
+    <h3>Category :</h3>
+    <select th:field="*{category}">
+        <option  th:each=" category :${categories}" th:text="${category.name}" th:value="${category.id}"></option>
+    </select>
+    <h3>Description :</h3>
+    <textarea th:field="*{description}" required></textarea>
+    <input type="submit" value="submit">
+    <span th:text="${message}"></span>
+</form>
+<a href="/blogs">Back</a>
+
+</body>
+</html>

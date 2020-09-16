@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>List Employee</title>
+<head th:replace="~{home-page.html::head}">
+
+</head>
+<style th:replace="~{customer/list-customer.html::style}"></style>
+<body>
+<div class="container-lg">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title" style="background-color: #3472a9">
+                <div class="row">
+                    <div class="col-sm-5"><h2>Service <b>Details</b></h2></div>
+                    <div class="col-sm-2">
+                        <a th:href="@{/admin/create-new-service}" class="btn btn-success add-new"><i
+                                class="fa fa-plus"></i>
+                            Add New</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="search-box">
+                            <form method="get">
+                                <div class="input-group">
+                                    <input type="text" id="search" name="search" class="form-control"
+                                           placeholder="Search by Name">
+                                    <input type="submit" value="search" class="btn btn-success">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    ​
+                </div>
+            </div>
+            <table class="table table-striped">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Area</th>
+                    <th>Number of floors</th>
+                    <th>Max people</th>
+                    <th>Fee Rent</th>
+                    <th>Type Rent</th>
+                    <th>Type Service</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr th:each=" service : ${services}">
+                    <td th:text="${service.id}"></td>
+                    <td th:text="${service.name}"></td>
+                    <td th:text="${service.area}"></td>
+                    <td th:text="${service.numberOfFloors}"></td>
+                    <td th:text="${service.maxPeople}"></td>
+                    <td th:text="${service.feeRent}"></td>
+                    <td th:text="${service.typeRent.name}"></td>
+                    <td th:text="${service.typeService.name}"></td>
+                    <td th:text="${service.status}"></td>
+                    <td>
+                        <a th:href="@{/admin/service-view/(id=${service.id})}" class="view" title="View"><i
+                                class="material-icons">&#xE417;</i></a>
+                        <a th:href="@{/admin/service-edit/(id=${service.id})}" class="edit"
+                           title="Edit"><i
+                                class="material-icons">&#xE254;</i></a>
+                        <a th:href="@{/admin/service-delete/(id=${service.id})}" class="delete"
+                           title="Delete"><i
+                                class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a th:href="@{'/admin/services'(page=${services.number - 1},search =${search})}"
+                   th:if="${services.hasPrevious()}">Previous</a>
+                <span th:text="${services.number + 1}"></span>/<span th:text="${services.totalPages}"></span>
+                <a th:href="@{'/admin/services'(page=${services.number + 1},search =${search})}"
+                   th:if="${services.hasNext()}">Next</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

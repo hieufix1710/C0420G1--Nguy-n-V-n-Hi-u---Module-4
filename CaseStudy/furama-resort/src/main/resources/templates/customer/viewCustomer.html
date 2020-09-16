@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{home-page.html::head}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style th:replace="~{customer/list-customer.html::styple}">
+
+    </style>
+</head>
+<body>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <form>
+            <div class="modal-header" style="background: dimgray">
+                <h4 class="modal-title" style="color: #e9e9e9">Customer Details</h4>
+                <a href="/static"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></a>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td>ID : </td>
+                        <td th:text="${customer.id}"></td>
+                    </tr>
+                    <tr>
+                        <td>Name : </td>
+                        <td th:text=" ${customer.name}"></td>
+                    </tr>
+                    <tr>
+                        <td>Birthday : </td>
+                        <td th:text="${customer.birthday}"></td>
+                    </tr> <tr>
+                    <td>CMND : </td>
+                    <td th:text="${customer.CMND}"></td>
+                </tr> <tr>
+                    <td>Phone Number : </td>
+                    <td th:text="${customer.phone}"></td>
+                </tr> <tr>
+                    <td>Email : </td>
+                    <td th:text="${customer.email}"></td>
+                </tr>
+                    </tr> <tr>
+                    <td>Address : </td>
+                    <td th:text="${customer.address}"></td>
+                </tr>
+                    <tr>
+                        <td>Customer type : </td>
+                        <td th:text="${customer.customerType.name}"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="/admin/show-list-customer"><input type="button" class="btn btn-secondary" data-dismiss="modal" value="Back"></a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

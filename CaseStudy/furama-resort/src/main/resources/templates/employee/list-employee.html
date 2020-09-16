@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>List Employee</title>
+<head th:replace="~{customer/list-customer.html::head}">
+
+</head>
+
+<body>
+<div class="container-lg">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title" style="background-color: #3472a9">
+                <div class="row">
+                    <div class="col-sm-5"><h2> <b>Employee List</b></h2></div>
+                    <div class="col-sm-2">
+                        <a th:href="@{/admin/create-new-employee}" class="btn btn-success add-new"><i
+                                class="fa fa-plus"></i>
+                            Add New</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="search-box">
+                            <form method="get">
+                                <div class="input-group">
+                                    <input type="text" id="search" name="search" class="form-control"
+                                           placeholder="Search by Name">
+                                    <input type="submit" value="search" class="btn btn-success">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    ​
+                </div>
+            </div>
+            <table class="table table-striped">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Birthday</th>
+                    <th>CMND</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+                <tr th:each="employee :${employees}">
+                    <td th:text="${employee.id}"></td>
+                    <td th:text="${employee.name}"></td>
+                    <td th:text="${employee.birthday}"></td>
+                    <td th:text="${employee.CMND}"></td>
+                    <td th:text="${employee.phone}"></td>
+                    <td th:text="${employee.email}"></td>
+                    <td th:text="${employee.address}"></td>
+                    <td>
+                        <a th:href="@{/admin/employee-view/(id=${employee.id})}" class="view" title="View"><i
+                                class="material-icons">&#xE417;</i></a>
+                        <a th:href="@{/admin/employee-edit/(id=${employee.id})}" class="edit"
+                           title="Edit"><i
+                                class="material-icons">&#xE254;</i></a>
+                        <a th:href="@{/admin/employee-delete/(id=${employee.id})}" class="delete"
+                           title="Delete"><i
+                                class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a th:href="@{'/admin/employees'(page=${employees.number - 1},search =${search})}"
+                   th:if="${employees.hasPrevious()}">Previous</a>
+                <span th:text="${employees.number + 1}"></span>/<span th:text="${employees.totalPages}"></span>
+                <a th:href="@{'/admin/employees'(page=${employees.number + 1},search =${search})}"
+                   th:if="${employees.hasNext()}">Next</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -36,17 +36,17 @@ public class User implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-          User user=(User) target;
-          String userName= user.getUserName();
-          String password=user.getPassword();
-          if (userName.isEmpty()){
-              ValidationUtils.rejectIfEmpty(errors,"userName","userName.empty");
-          }
-         if (password.isEmpty()){
-             ValidationUtils.rejectIfEmpty(errors,"password","password.empty");
-         }
+        User user = (User) target;
+        String userName = user.getUserName();
+        String password = user.getPassword();
+        if (userName.isEmpty()) {
+            ValidationUtils.rejectIfEmpty(errors, "userName", "userName.empty");
+        }
+        if (password.isEmpty()) {
+            ValidationUtils.rejectIfEmpty(errors, "password", "password.empty");
+        }
 
-        if (password.length()>6 || password.length()<8){
+        if (password.length() > 6 || password.length() < 8) {
             errors.rejectValue("password", "password.length");
         }
 

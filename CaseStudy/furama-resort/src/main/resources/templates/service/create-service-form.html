@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{home-page.html::head}">
+    <meta charset="UTF-8">
+    <title>Cra</title>
+</head>
+<style th:replace="~{customer/list-customer.html::style}">
+</style>
+<body>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <form action="/admin/create-new-service" method="post">
+            <div class="modal-header" style="background: dimgrey">
+                <h4 class="modal-title" style="color: #e9e9e9">Add Service</h4>
+                <a class="close" th:href="@{/admin/services}">x</a>
+            </div>
+            <div class="modal-body" th:object="${service}">
+                <div class="form-group">
+                    <label>Name :</label>
+                    <input type="text" class="form-control" name="name" th:field="*{name}" id="name">
+                    <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Area use :</label>
+                    <input type="text" class="form-control" name="birthday" th:field="*{area}" id="birthday">
+                    <p th:if="${#fields.hasErrors('area')}" th:errors="*{area}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Number floors :</label>
+                    <input type="text" class="form-control" name="CMND" th:field="*{numberOfFloors}" id="CMND">
+                    <p th:if="${#fields.hasErrors('numberOfFloors')}" th:errors="*{numberOfFloors}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Max people :</label>
+                    <input type="text" class="form-control" name="phone" th:field="*{maxPeople}" id="phone">
+                    <p th:if="${#fields.hasErrors('maxPeople')}" th:errors="*{maxPeople}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Type rent : </label>
+                    <select th:field="*{typeRent}"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option th:each="typeRent:${typeRents}" th:value="${typeRent.id}" th:text="${typeRent.name}"></option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('typeRent')}" th:errors="*{typeRent}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Type service : </label>
+                    <select th:field="*{typeService}"  class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option th:each="typeService:${typeServices}" th:value="${typeService.id}" th:text="${typeService.name}"></option>
+                    </select>
+                    <p th:if="${#fields.hasErrors('typeService')}" th:errors="*{typeService}"></p>
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <input type="text" class="form-control" name="email" th:field="*{status}" id="email">
+                    <p th:if="${#fields.hasErrors('status')}" th:errors="*{status}"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" th:href="@{/admin/services}">Cancel</a>
+                <input type="submit" class="btn btn-success" value="Add">
+                <div th:text="${message}"></div>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

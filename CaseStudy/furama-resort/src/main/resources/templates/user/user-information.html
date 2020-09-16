@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User information</title>
+</head>
+<body>
+<h1>User information :</h1>
+<h3>Welcome : <span th:utext="${#request.userPrincipal.name}"></span></h3>
+<div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+<form class="form-inline">
+    <a class="btn btn-outline-success my-2 my-sm-0" href="#" th:if="${#request.userPrincipal != null}" th:href="@{/logout}" style="margin-right: 10px">Logout</a>
+</form>
+</body>
+</html>

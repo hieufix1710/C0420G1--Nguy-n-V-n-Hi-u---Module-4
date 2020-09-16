@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</head>
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid black;
+    }
+</style>
+<body>
+<h2>List notes</h2>
+<hr>
+
+<form>
+    <input type="text" id="myInput"  placeholder="Search by any word">
+    <form method="get" action="/search">
+        <input type="text" id="search" name="search" placeholder="Search by title">
+        <input type="submit" value="Search">
+    </form>
+    <br>
+    <form>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Type </th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="myTable">
+            <tr th:each="note : ${notes}" >
+                <td th:text="${note.id}"></td>
+                <td th:text="${note.title}"></td>
+                <td th:text="${note.content}"></td>
+                <td th:text="${note.noteType.name}"></td>
+                <td>
+                    <a th:href="@{/delete/(id=${note.id})}">Delete</a> |
+                    <a th:href="@{/edit/(id=${note.id})}">Edit</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div>
+            <a th:href="@{'/list-notes'(page=${notes.number - 1},search =${search})}" th:if="${notes.hasPrevious()}">Previous</a>
+            <span th:text="${notes.number + 1}"></span>/<span th:text="${notes.totalPages}"></span>
+            <a th:href="@{'/list-notes'(page=${notes.number + 1},search =${search})}" th:if="${notes.hasNext()}">Next</a>
+        </div>
+    </form>
+    <a href="/create-new-note">Create new note</a>
+    <span th:text="${message}" style="color: red"></span>
+</form>
+
+<script type="text/javascript">
+    // search
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

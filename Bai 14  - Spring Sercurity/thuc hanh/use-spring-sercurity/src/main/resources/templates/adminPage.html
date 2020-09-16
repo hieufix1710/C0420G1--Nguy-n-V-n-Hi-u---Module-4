@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin</title>
+</head>
+<body>
+<!-- Include _menu.html -->
+<th:block th:include="/_menu"></th:block>
+
+<h2>Admin Page</h2>
+<h3>Welcome :
+    <span th:utext="${#request.userPrincipal.name}"></span>
+</h3>
+<b>This is protected page!</b>
+
+<br/><br/>
+
+<div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+
+
+<div>
+    <form>
+        <table>
+            <tr>
+
+                <th>ID</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </tr>
+            <tr th:each="blog :${blogs}">
+                <td th:text="${blog.id}"></td>
+                <td th:text="${blog.description}"></td>
+                <td>
+                    <a th:href="@{/delete/(id=${blog.id})}">Delete</a>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</div>
+<span th:text="${message}" style="color: darkred"></span>
+</body>
+
+</html>

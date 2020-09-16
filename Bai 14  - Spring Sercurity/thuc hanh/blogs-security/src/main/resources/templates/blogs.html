@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#search').submit(function (event) {
+            var search=$('#myInput').val()
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type : "POST",
+                data: search,
+                url: "/blog/search",
+                success : function (blogs) {
+                    var respContent = "<table border='1'>";
+                    respContent += " <tr>\n" +
+                        "        <th>Title</th>\n" +
+                        "        <th>Category</th>\n" +
+                        "        <th>Description</th>\n" +
+
+                        "    </tr>"
+                    for (let blog of blogs){
+                        respContent +="<tr>";
+                        respContent += "<td>" + blog.title+" </td>";
+                        respContent += "<td>" + blog.category.name +"</td>";
+                        respContent += "<td>" + blog.description +"</td>";
+                        respContent += "</tr>"
+                    }
+                    respContent +="</table>";
+
+
+                    $("#result").html(respContent);
+                }
+            })
+            event.preventDefault();
+        })
+    })
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th,td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<h2>List blogs</h2>
+<a href="/create">Create new blog</a>
+<form id="search" method="post" action="/search">
+    <input type="text" id="myInput">
+    <input type="submit" value="Submit">
+</form>
+<form id="page">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Tittle</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="blog : ${blogs}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.title}"></td>
+            <td th:text="${blog.category.name}"></td>
+            <td th:text="${blog.description}"></td>
+            <td><a th:href="@{/edit/(id=${blog.id})}">Edit</a></td>
+            <td><a th:href="@{/delete/(id=${blog.id})}">Delete</a></td>
+        </tr>
+    </table>
+    <div>
+        <a th:href="@{'/blogs'(page=${blogs.number - 1},search =${search})}" th:if="${blogs.hasPrevious()}">Previous</a>
+        <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+        <a th:href="@{'/blogs'(page=${blogs.number + 1},search =${search})}" th:if="${blogs.hasNext()}">Next</a>
+    </div>
+</form>
+<p th:text="${message}"></p>
+<a href="/">Back to home page</a>
+<p id="result"></p>
+
+</body>
+</html>

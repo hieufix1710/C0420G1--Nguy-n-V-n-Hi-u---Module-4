@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Licst blogs</title>
+
+<!--    Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1><strong>List blogs</strong></h1>
+<!--<form id="searchForm">-->
+<!--    <input type="text" id="search" name="search" placeholder="Enter Category">-->
+<!--    <input type="submit" value="Search">-->
+<!--</form>-->
+<div class="container">
+<div>
+    <p>Search :</p>
+    <input type="text" id="myInput"  placeholder="Enter Category">
+</div>
+<form id="list">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr th:each="blog : ${blogs}">
+               <td th:text="${blog.id}"></td>
+               <td th:text="${blog.category.name}"></td>
+               <td th:text="${blog.description}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <a th:href="@{'/blogs'(page=${blogs.number - 1},search =${search})}" th:if="${blogs.hasPrevious()}">Previous</a>
+        <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+        <a th:href="@{'/blogs'(page=${blogs.number + 1},search =${search})}" th:if="${blogs.hasNext()}">Next</a>
+    </div>
+</form>
+<div>
+    <a href="/create">Create new blog</a>
+</div>
+</div>
+
+
+
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function () {-->
+<!--           $('#searchForm').submit(function (event) {-->
+<!--                var search = $('#search').val();-->
+<!--                $.ajax ({-->
+<!--                    headers: {-->
+<!--                        'Accept': 'application/json',-->
+<!--                        'Content-Type': 'application/json'-->
+<!--                    },-->
+<!--                    url  : '/search',-->
+<!--                    type : "POST",-->
+<!--                    data: search,-->
+<!--                    success : function (blogs) {-->
+<!--                        var respContent = "<table border='1'>";-->
+<!--                        respContent += " <tr>\n" +-->
+<!--                            "        <th>ID</th>\n" +-->
+<!--                            "        <th>Category</th>\n" +-->
+<!--                            "        <th>Description</th>\n" +-->
+<!--                            "    </tr>"-->
+<!--                        for (let blog of blogs){-->
+<!--                            respContent +="<tr>";-->
+<!--                            respContent += "<td>" + blog.id+" </td>";-->
+<!--                            respContent += "<td>" + blog.category.name +"</td>";-->
+<!--                            respContent += "<td>" + blog.description +"</td>";-->
+<!--                            respContent += "</tr>"-->
+<!--                        }-->
+<!--                        respContent +="</table>";-->
+<!--                        $("#list").hide();-->
+<!--                        $("#page").hide();-->
+<!--                        $("#result").html(respContent);-->
+<!--                    }-->
+<!--                });-->
+<!--               event.preventDefault();-->
+<!--           });-->
+<!--    });-->
+<!--</script>-->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+</body>
+</html>

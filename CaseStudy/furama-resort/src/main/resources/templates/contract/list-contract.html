@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>List Employee</title>
+<head th:replace="~{home-page.html::head}">
+
+</head>
+<style th:replace="~{customer/list-customer.html::style}">
+
+</style>
+<body>
+<div class="container-lg">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title" style="background-color: #3472a9">
+                <div class="row">
+                    <div class="col-sm-3"><h2>Contract </h2></div>
+                    <div class="col-sm-2">
+                        <a th:href="@{/admin/contract-details}" class="btn btn-success add-new"><i
+                                class="fa fa-plus"></i>
+                            Contract Details</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a th:href="@{/admin/create-new-contract}" class="btn btn-success add-new"><i
+                                class="fa fa-plus"></i>
+                            Add New</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="search-box">
+                            <form method="get">
+                                <div class="input-group">
+                                    <input type="text" id="search" name="search" class="form-control"
+                                           placeholder="Search by name customer">
+                                    <input type="submit" value="search" class="btn btn-success">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    ​
+                </div>
+            </div>
+            <table class="table table-striped">
+                <tr>
+                    <th>ID</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                    <th>Deposit</th>
+                    <th> Total money</th>
+                    <th>Customer name</th>
+                    <th>Employee name</th>
+                    <th>Service use</th>
+                    <th>Action</th>
+                </tr>
+                <tr th:each=" contract : ${contracts}">
+                    <td th:text="${contract.id}"></td>
+                    <td th:text="${contract.contractStartDate}"></td>
+                    <td th:text="${contract.contractEndDate}"></td>
+                    <td th:text="${contract.contractDeposit}"></td>
+                    <td th:text="${contract.contractTotalMoney}"></td>
+                    <td th:text="${contract.customer.name}"></td>
+                    <td th:text="${contract.employee.name}"></td>
+                    <td th:text="${contract.service.name}"></td>
+                    <td>
+                        <a th:href="@{/furama/contract-view/(id=${contract.id})}" class="view" title="View"><i
+                                class="material-icons">&#xE417;</i></a>
+                        <a th:href="@{/furama/contract-edit/(id=${contract.id})}" class="edit"
+                           title="Edit"><i
+                                class="material-icons">&#xE254;</i></a>
+                        <a th:href="@{/furama/contract-delete/(id=${contract.id})}" class="delete"
+                           title="Delete"><i
+                                class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <a th:href="@{'/admin/furama'(page=${contracts.number - 1},search =${search})}"
+                   th:if="${contracts.hasPrevious()}">Previous</a>
+                <span th:text="${contracts.number + 1}"></span>/<span th:text="${contracts.totalPages}"></span>
+                <a th:href="@{'/admin/furama'(page=${contracts.number + 1},search =${search})}"
+                   th:if="${contracts.hasNext()}">Next</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
