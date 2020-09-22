@@ -42,6 +42,7 @@ public class CustomerController {
     @PostMapping("/create-new-customer")
     public String createNewCustomer(@Validated @ModelAttribute("customer") Customer customer, BindingResult bindingResult,Model model){
         if (bindingResult.hasErrors()){
+            model.addAttribute("customerTypes",this.customerTypeService.findAllCustomerType());
             return "customer/create-customer-form";
         }
             this.customerService.saveCustomer(customer);

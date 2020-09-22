@@ -46,7 +46,7 @@ public class User implements Validator {
             ValidationUtils.rejectIfEmpty(errors, "password", "password.empty");
         }
 
-        if (password.length() > 6 || password.length() < 8) {
+        if (password.length() < 6 || password.length() > 8) {
             errors.rejectValue("password", "password.length");
         }
 

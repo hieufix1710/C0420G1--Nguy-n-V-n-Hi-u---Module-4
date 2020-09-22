@@ -8,9 +8,9 @@
 <body>
 <form th:object="${user}" action="/login" method="post">
     <h3>User name :</h3>
-    <input type="text" th:field="*{name}" >
+    <input type="text" name="name" th:value="${cookieUserName}">
     <h3>Password :</h3>
-    <input type="text" th:field="*{password}" >
+    <input type="password" th:field="*{password}" >
     <input type="submit" value="Login">
 </form>
 <p th:text="${message}"></p>

@@ -14,8 +14,10 @@
         <form th:object="${note}" action="/createNewNote" method="post">
             <h3>Title :</h3>
             <input type="text" th:field="*{title}">
+            <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
             <h3>Content :</h3>
             <textarea type="text" th:field="*{content}"></textarea>
+            <span th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></span>
             <div style="display: block">
                 <h3>Type Note :</h3>
                 <select th:field="*{noteType}">

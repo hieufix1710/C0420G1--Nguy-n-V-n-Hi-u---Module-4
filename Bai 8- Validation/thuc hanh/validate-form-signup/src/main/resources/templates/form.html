@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
+<style>
+    p{
+        color: red;
+    }
+</style>
 <body>
+
 <form th:object="${user}" action="/login" method="post">
     <h1>Login</h1>
     <h3>User name : </h3>

@@ -1,222 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="887440ab-2a06-4ea3-955c-b10dfb83e50e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/entity/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/entity/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/entity/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/repository/modelRepo/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/repository/modelRepo/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/service/modelService/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/service/modelService/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/service/modelService/imp/BlogSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/service/modelService/imp/CategorySerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/403Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/_menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/adminPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/blogs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/createForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/userInfoPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/blogs-security/src/main/resources/templates/welcomePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/FoodManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/entity/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/entity/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/entity/model/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/repository/modelRepo/CategoryRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/repository/modelRepo/FoodRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/service/modelService/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/service/modelService/FoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/service/modelService/imp/CategorySerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/service/modelService/imp/FoodSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/403Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/_menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/adminPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/userInfoPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/main/resources/templates/welcomePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/food-manager-sercuriry/food-manager/src/test/java/com/example/FoodManagerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/UseSpringSercurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/entity/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/repository/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/service/imp/BlogSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/service/imp/CategorySerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/service/imp/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/403Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/_menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/adminPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/create-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/list-blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/userInfoPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/use-spring-sercurity/src/main/resources/templates/welcomePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/repository/BlogRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/service/BlogSer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/service/imp/BlogSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/BlogUseAjaxApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/repository/BlogRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/repository/CategoryRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/service/BlogSer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/service/CategorySer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/service/imp/BlogSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/java/com/example/bloguseajax/service/imp/CategorySerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/resources/templates/create-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/main/resources/templates/list-blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai tap/blog-ajax/src/test/java/com/example/bloguseajax/BlogUseAjaxApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/controller/SmartphoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/model/SmartPhones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/repository/SmartPhoneRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/service/SmartPhoneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/service/imp/SmartPhoneServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/resources/templates/all-phones.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../phones-ajax/src/main/resources/templates/new-phone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/list-contract-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/config/configValidate/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ContractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/AttachService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/DetailContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/TypeRent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/TypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/user/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/user/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/user/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/AttachServiceRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/ContractDetailRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/ContractRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/CustomerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/CustomerTypeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/EmployeeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/ServiceRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/TypeRentRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/modelRepo/TypeServiceRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/userRepo/AppRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/userRepo/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/repository/userRepo/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/AppRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/AppUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/IAttachService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/IContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/IContractDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/ICustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/ICustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/IEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/ITypeRent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/ITypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/AppRoleSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/AppUserSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/AttachServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/ContractDetailImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/ContractImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/CustomerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/CustomerTypeImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/EmployeeImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/ServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/TypeRentImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/modelSer/imp/TypeServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/service/userService/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/create-contract-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/list-contract-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/list-contract.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/create-customer-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/edit-customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/list-customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/viewCustomer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/employee/list-employee.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/first-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/home-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/create-service-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/list-service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/403Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/logoutSuccessfulPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/user-information.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/validate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Nội dung tổng quan của module 4 .md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/custom-validate/src/main/java/com/codegym/customvalidate/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/custom-validate/src/main/java/com/codegym/customvalidate/Config.java" afterDir="false" />
+    <list default="true" id="56ff58b4-7baa-4317-9ff9-a08928812ddb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/entity/UserRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/repository/UserRegisterRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/UserRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/imp/RoleServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/imp/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/imp/UserRegisterServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/imp/UserRoleServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/service/imp/UserSerImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/403Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/adminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/registerForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/userInfoPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/sercurity/src/main/resources/templates/welcomePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/controller/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/model/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/model/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/repository/FoodRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/repository/TypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/service/FoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/service/TypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/service/imp/FoodServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/java/com/example/service/imp/TypeServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/resources/templates/createForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Bai 14  - Spring Sercurity/thuc hanh/test-ajax/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/cssfile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/home-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/buildAnnotation/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/buildAnnotation/PhoneValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/employee/create-employee-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/errorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/edit-form-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/view-service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/inotes-case-james/src/main/resources/static/text.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/java/com/example/validateformsignup/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/java/com/example/validateformsignup/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validation-infor-user/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validation-infor-user/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/.idea/thuc hanh.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 11 - Web Service/thuc hanh/blog-resful/src/main/java/com/example/blogresful/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/home-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/list-contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/list-contract.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/list-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/Furama-spring-boot/src/main/resources/templates/list-customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/resources/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bai 8- Validation/thuc hanh/validate-form-signup/src/main/resources/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/java/com/example/testcookieandsession/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/java/com/example/testcookieandsession/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/resources/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Bài 10 - Session and Cookie/thuc hanh/test-cookie-and-session/src/main/resources/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/controller/SmartphoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../phones-ajax/src/main/java/com/example/phonesmanagerwthajax/controller/SmartphoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phones-ajax/src/main/resources/templates/new-phone.html" beforeDir="false" afterPath="$PROJECT_DIR$/../phones-ajax/src/main/resources/templates/new-phone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/FuramaResortApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/FuramaResortApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/java/com/example/entity/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/create-contract-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/create-contract-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/list-contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/contract/list-contract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/create-customer-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/create-customer-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/edit-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/edit-customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/list-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/list-customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/viewCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/customer/viewCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/employee/list-employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/employee/list-employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/first-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/first-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/home-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/list-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/service/list-service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/loginPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/logoutSuccessfulPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/furama-resort/src/main/resources/templates/user/logoutSuccessfulPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/inotes-case-james/src/main/java/com/example/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/inotes-case-james/src/main/java/com/example/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/inotes-case-james/src/main/resources/templates/edit-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CaseStudy/inotes-case-james/src/main/resources/templates/edit-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Nội dung tổng quan của module 4 .md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Nội dung tổng quan của module 4 .md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,14 +94,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1hXkPez2YHOdTFP8rIN7DihwQMA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1hdcZ20yRgDT0U9pBpkLwzs8evo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -244,22 +115,29 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="887440ab-2a06-4ea3-955c-b10dfb83e50e" name="Default Changelist" comment="" />
-      <created>1600164801194</created>
+      <changelist id="56ff58b4-7baa-4317-9ff9-a08928812ddb" name="Default Changelist" comment="" />
+      <created>1600344462064</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600164801194</updated>
-      <workItem from="1600164802413" duration="365000" />
+      <updated>1600344462064</updated>
+      <workItem from="1600344464762" duration="1372000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600345141200">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1600345141200" />
   </component>
 </project>

@@ -43,9 +43,32 @@ public class ServiceController {
         if (bindingResult.hasFieldErrors()){
             return "service/create-service-form";
         }
+
         this.iService.saveService(service);
         model.addAttribute("message","Create success !");
         return "service/create-service-form";
+    }
+
+    @GetMapping("/service-view")
+    public String viewService(@RequestParam ("id") Long id,Model model){
+        Service service=this.iService.findById(id);
+        model.addAttribute("service",service);
+        return "service/view-service";
+    }
+
+    @GetMapping ("/service-edit/")
+    public String editForm(@RequestParam Long id,Model model){
+        Service service=this.iService.findById(id);
+        model.addAttribute("service",service);
+        return "service/edit-form-service";
+
+    }
+
+    @GetMapping ("/service-delete")
+    public String deleteService(@RequestParam Long id,Model model){
+        this.iService.deleteService(id);
+        model.addAttribute("message","Deleted !");
+        return "service/list-service";
     }
 
 

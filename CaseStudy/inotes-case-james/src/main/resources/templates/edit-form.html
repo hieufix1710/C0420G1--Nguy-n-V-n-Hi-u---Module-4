@@ -11,9 +11,9 @@
     <form th:object="${note}" action="/update" method="post">
         <input type="hidden" th:field="*{id}">
         <h3>Title</h3>
-        <input type="text"  th:field="*{title}">
+        <input type="text"  th:field="*{title}" required>
         <h3>Content</h3>
-        <input type="text" th:field="*{content}">
+        <input type="text" th:field="*{content}" required>
         <br><br>
         <select th:field="*{noteType}">
             <option th:each="noteType: ${noteType}" th:value="${noteType.id}" th:text="${noteType.name}"></option>
@@ -22,6 +22,7 @@
         <input type="submit" value="Update">
     </form>
     <p th:text="${message}"></p>
+    <a href="/">Back</a>
 </div>
 </body>
 </html>

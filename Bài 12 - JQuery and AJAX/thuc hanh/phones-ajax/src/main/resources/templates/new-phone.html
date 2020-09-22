@@ -4,39 +4,9 @@
     <meta charset="UTF-8">
     <title>Create new Smartphone</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#newSmartphoneForm').submit(function(event) {
-                var producer = $('#producer').val();
-                var model = $('#model').val();
-                var price = $('#price').val();
-                var json = { "producer" : producer, "model" : model, "price": price};
-                $.ajax({
-                    // phần header này chỉ định chỉ cho phép json truyền tới và truyền đi cũng là json
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    type : "POST",
-                    data: JSON.stringify(json),
-                    url: "/smartphones/createnewPhone",
-                    // if success then print information in down
-                    success: function(smartphone) {
-                        var respContent = "";
-                        respContent += "<span class='success'>Smartphone was created: [";
-                        respContent += smartphone.producer + " : ";
-                        respContent += smartphone.model + " : " ;
-                        respContent += smartphone.price + "]</span>"
-                        $("#sPhoneFromResponse").html(respContent);
-                    }
-                });
-                //lệnh này dùng để chặn request gửi đi chỉ ajax được execute
-                event.preventDefault();
-            });
-        });
-    </script>
+
 </head>
-<body>
+
 <body>
 <div id="container">
     <h1>Create new Smartphone</h1>
@@ -75,5 +45,39 @@
     </form>
     <a th:href="@{/smartphones}">List</a>
 </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#newSmartphoneForm').submit(function(event) {
+            var producer = $('#producer').val();
+            var model = $('#model').val();
+            var price = $('#price').val();
+            var json = { "producer" : producer, "model" : model, "price": price};
+            $.ajax({
+                // phần header này chỉ định chỉ cho phép json truyền tới và truyền đi cũng là json
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type : "POST",
+                data: JSON.stringify(json),
+                url: "/smartphones/createnewPhone",
+                // if success then print information in down
+                success: function(smartphone) {
+                    // var respContent = "";
+                    // respContent += "<span class='success'>Smartphone was created: [";
+                    // respContent += smartphone.producer + " : ";
+                    // respContent += smartphone.model + " : " ;
+                    // respContent += smartphone.price + "]</span>"
+                    // $("#sPhoneFromResponse").html(respContent);
+                    alert("ok !")
+                }
+            });
+            //lệnh này dùng để chặn request gửi đi chỉ ajax được execute
+            event.preventDefault();
+        });
+    });
+</script>
 </body>
 </html>

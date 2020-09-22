@@ -1,14 +1,21 @@
 package com.example.model;
 
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table (name = "note")
-public class Note {
+public class Note implements Validator {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotEmpty
     private String title;
+    @NotEmpty
     private String content;
 
 
@@ -46,5 +53,23 @@ public class Note {
 
     public void setNoteType(NoteType noteType) {
         this.noteType = noteType;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return Note.class.isAssignableFrom(clazz);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        Note note= (Note) target;
+
+        if (note.title.isEmpty()){
+            errors.rejectValue("title","title.isEmpty");
+        }
+        if (note.content.isEmpty()){
+            errors.rejectValue("content","content.isEmpty");
+        }
+
     }
 }

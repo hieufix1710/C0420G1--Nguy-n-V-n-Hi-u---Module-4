@@ -53,6 +53,7 @@ public class ContractController {
         if (bindingResult.hasErrors()){
             return "contract/create-contract-form";
         }else {
+            
             this.iContract.saveContract(contract);
             model.addAttribute("message","Created !");
             return "contract/create-contract-form";

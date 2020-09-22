@@ -14,7 +14,7 @@
         <form action="/admin/customer-update/" method="post">
             <div class="modal-header" style="background: dimgrey">
                 <h4 class="modal-title" style="color: #e9e9e9">Add Customer</h4>
-                <a class="close" th:href="@{/static}">x</a>
+                <a class="close" th:href="@{/admin/show-list-customer}">x</a>
             </div>
             <div class="modal-body" th:object="${customer}">
                 <div class="form-group">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-default" th:href="@{/}">Cancel</a>
+                <a class="btn btn-default" th:href="@{/admin/show-list-customer}">Cancel</a>
                 <input type="submit" class="btn btn-success" value="Update">
                 <div th:text="${message}"></div>
             </div>

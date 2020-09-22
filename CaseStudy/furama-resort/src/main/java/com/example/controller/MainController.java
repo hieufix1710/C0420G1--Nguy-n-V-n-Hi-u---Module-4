@@ -13,7 +13,11 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 
 @Transactional
 @Controller
@@ -35,12 +39,16 @@ public class MainController {
     public String homePage(Principal principal, Model model) {
         User loginedUser = (User) ((Authentication) principal).getPrincipal();
         String userInfo = WebUtils.toString(loginedUser);
+        model.addAttribute("userName",principal.getName());
+        //set user name display to homepage
         model.addAttribute("userInfo", userInfo);
         return "home-page";
     }
 
     @GetMapping("/login")
-    public String loginForm() {
+    public String loginForm(Model model,@CookieValue (value = "username",defaultValue = "") String setUser) {
+        System.out.println(setUser);
+        model.addAttribute("username",setUser);
         return "user/loginPage";
     }
 
@@ -71,12 +79,23 @@ public class MainController {
     }
 
     @GetMapping("/user-info")
-    public String showInfo(Principal principal, Model model) {
+    public String showInfo(Principal principal, Model model, HttpServletResponse response) {
+        //add cookie to response
+        Cookie cookie=new Cookie("username",principal.getName());
+
+        cookie.setMaxAge(60);
+        response.addCookie(cookie);
+
+
         User loginedUser = (User) ((Authentication) principal).getPrincipal();
         String userInfo = WebUtils.toString(loginedUser);
         model.addAttribute("userInfo", userInfo);
         return "user/user-information";
     }
+
+
+
+
 
 
 

@@ -8,6 +8,8 @@ public class InoteCasejamesApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InoteCasejamesApplication.class, args);
+
+
     }
 
 }

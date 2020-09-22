@@ -2,6 +2,7 @@ package com.example.testcookieandsession.controller;
 
 import com.example.testcookieandsession.model.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -20,8 +21,10 @@ public class UserController {
     }
 
     @GetMapping ("/login")
-    public ModelAndView login(){
-          return new ModelAndView("login","user",new User());
+    public ModelAndView login(@CookieValue (value = "user",defaultValue = "") String setUser, Model model){
+        model.addAttribute("user",new User());
+        model.addAttribute("cookieUserName",setUser);
+          return new ModelAndView("login");
     }
 
     @PostMapping ("/login")

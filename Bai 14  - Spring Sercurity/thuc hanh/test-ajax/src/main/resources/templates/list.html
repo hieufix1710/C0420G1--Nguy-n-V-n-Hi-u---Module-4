@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<style>
+    table{
+        border: solid 1px black;
+        border-collapse: collapse;
+    }
+    th,td{
+        border: solid 1px black;
+    }
+</style>
+<body>
+<h1>Manager food</h1>
+<form >
+    <input type="text" name="search" id="search">
+    <input type="button" value="Search" id="searchForm">
+</form>
+<a href="/create-new-food">Create new food</a>
+<hr>
+<form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Type</th>
+        </tr>
+        <tr th:each=" food :${foods}">
+            <td th:text="${food.name}"></td>
+            <td th:text="${food.price}"></td>
+            <td th:text="${food.type.nameType}"></td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+ $(document).ready(function () {
+         $('#searchForm').click(function () {
+               var search=$('#search').val();
+               var  json= {"search":search};
+             $.ajax({
+                 headers: {
+                     'Accept': 'application/json; charset=utf-8',
+                     'Content-Type': 'application/json'
+                 },
+                 type: 'GET',
+                 data: json,
+                 dataType: 'json',
+                 url : '/search',
+                 success: function (data) {
+                     console.log(data)
+                         alert("ok !")
+                 },
+                 error:function () {
+                    alert("error !")
+
+
+                 }
+             });
+         });
+ });
+</script>
+<script>
+</script>
+</body>
+</html>

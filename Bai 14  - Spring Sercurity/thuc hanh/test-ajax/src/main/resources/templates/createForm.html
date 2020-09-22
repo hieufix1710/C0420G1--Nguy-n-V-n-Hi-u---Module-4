@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new food</title>
+</head>
+<body>
+<h2>Create new food</h2>
+<form th:object="${food}" action="/create-new-food" method="post">
+    <h3>Name :</h3>
+    <input type="text" th:field="*{name}">
+    <h3>Price :</h3>
+    <input type="text" th:field="*{price}">
+    <h3>Type :</h3>
+    <select th:field="*{type}">
+        <option th:each="type :${types}" th:text="${type.nameType}" th:value="${type.id}"></option>
+    </select>
+    <br><br>
+    <input type="submit" value="Add">
+    <p th:text="${message}"></p>
+    <a href="/">Back</a>
+</form>
+</body>
+</html>

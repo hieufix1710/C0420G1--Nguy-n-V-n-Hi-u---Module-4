@@ -1,5 +1,7 @@
 package com.example.entity.model;
 
+import com.example.buildAnnotation.Phone;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;

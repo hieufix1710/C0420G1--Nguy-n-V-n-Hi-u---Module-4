@@ -34,6 +34,9 @@ public class SmartphoneController {
         return smartphoneService.findAll();
     }
 
+
+
+
     @GetMapping("/smartphones")
     public ModelAndView allPhonesPage() {
         ModelAndView modelAndView = new ModelAndView("all-phones");

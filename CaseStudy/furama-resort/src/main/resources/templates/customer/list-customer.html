@@ -96,6 +96,7 @@
     </style>
 </head>
 <body style="background-image: url('https://dulichtoday.vn/wp-content/uploads/2019/02/resort-da-nang-naman-restreat-1.jpg')">
+<th:block th:include="/bar"></th:block>
 <div class="container-lg">
     <div class="table-responsive">
         <div class="table-wrapper">
@@ -143,12 +144,12 @@
                     <td th:text="${customer.email}"></td>
                     <td th:text="${customer.address}"></td>
                     <td>
-                        <a th:href="@{/furama-resort/customer-view/(id=${customer.id})}" class="view" title="View"><i
+                        <a th:href="@{/admin/customer-view/(id=${customer.id})}" class="view" title="View"><i
                                 class="material-icons">&#xE417;</i></a>
-                        <a th:href="@{/furama-resort/customer-edit/(id=${customer.id})}" class="edit"
+                        <a th:href="@{/admin/customer-edit/(id=${customer.id})}" class="edit"
                            title="Edit"><i
                                 class="material-icons">&#xE254;</i></a>
-                        <a th:href="@{/furama-resort/customer-delete/(id=${customer.id})}" class="delete"
+                        <a th:href="@{/admin/customer-delete/(id=${customer.id})}" class="delete"
                            title="Delete"><i
                                 class="material-icons">&#xE872;</i></a>
                     </td>

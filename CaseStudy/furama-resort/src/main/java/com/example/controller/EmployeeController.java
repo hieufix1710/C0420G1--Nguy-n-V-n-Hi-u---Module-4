@@ -24,7 +24,7 @@ public class EmployeeController {
     }
     @GetMapping("/create-new-employee")
     public String createEmployeeForm(){
-        return "create-employee-form";
+        return "employee/create-employee-form";
     }
 
 }

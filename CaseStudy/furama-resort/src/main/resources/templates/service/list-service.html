@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <title>List Employee</title>
-<head th:replace="~{home-page.html::head}">
+<head th:replace="~{customer/list-customer.html::head}">
 
 </head>
-<style th:replace="~{customer/list-customer.html::style}"></style>
+<!--<style th:replace="~{customer/list-customer.html::style}"></style>-->
 <body>
+<th:block th:include="/bar"></th:block>
 <div class="container-lg">
     <div class="table-responsive">
         <div class="table-wrapper">
@@ -63,6 +64,8 @@
                         <a th:href="@{/admin/service-delete/(id=${service.id})}" class="delete"
                            title="Delete"><i
                                 class="material-icons">&#xE872;</i></a>
+
+
                     </td>
                 </tr>
             </table>
@@ -72,10 +75,11 @@
                 <span th:text="${services.number + 1}"></span>/<span th:text="${services.totalPages}"></span>
                 <a th:href="@{'/admin/services'(page=${services.number + 1},search =${search})}"
                    th:if="${services.hasNext()}">Next</a>
+
             </div>
         </div>
     </div>
 </div>
-
+<span th:text="${message}"></span>
 </body>
 </html>

@@ -13,7 +13,7 @@ public class CustomerController {
     @Autowired
     private CusSer cusSer;
 
-    @GetMapping("/customers")
+    @GetMapping(value = {"/customer","","/"})
     public ModelAndView getAll(){
         return new ModelAndView("list-customer","customers",cusSer.findAll());
     }
